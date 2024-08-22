@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <img class = "specific" src = "testimg.png">
+
+    <button  onclick = 'buttonClicked()' class = "specific">Click me</button>
+
+    <!-- Users giving information that will be stormed in the database -->
+    <form id = "form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"></br>
+
+        <label for="email">Email:</label>
+        <input type = "text" id = "email" name="email"></br>
+
+        <p>Favorite Pokemon Type:</p>
+        <label for="r1">Fire</label>
+        <input type = "radio" id = "r1" name="Fire"></br>
+        <label for="r2">Water</label>
+        <input type = "radio" id = "r2" name="Water"></br>
+        <label for="r3">Electric</label>
+        <input type = "radio" id = "r3" name="Electric"></br>
+        <label for="r4">Earth</label>
+        <input type = "radio" id = "r4" name="Earth"></br>
+        <label for="r5">Light</label>
+        <input type = "radio" id = "r5" name="Light"></br>
+        <label for="r6">Dark</label>
+        <input type = "radio" id = "r6" name="Dark"></br>
+        <label for="r7">Other</label>
+        <input type = "radio" id = "r7" name="Other"></br>
+
+        <input type="submit" id = "submit" onclick = 'submitForm()'>
+    </form>
+
+    <div id = "table">
+        <h2>Table</h2>
+        <table id = "dataTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- checkbox (like terms and conditions) -->
+    <form>
+    </br>
+        <label for = "agree">Do you agree to sell your soul for $19.99?</label>
+        <input type = "checkbox" id = "agree"></br></br>
+        <input type = "button" onclick = "checkAgree()" value = "Sell Soul Here">
+    </form>
+
+
+
+    
+
+    <!-- Should be placed before the </body> line-->
+    <script src = "js.js"></script>
+</body>
+</html>
