@@ -20,6 +20,21 @@ function buttonClicked(){
     }
 }
 
+//function to insert data to a table
+function insertdata(userName, email, type) {
+    // Create a new table row
+    var $tr = $("<tr></tr>");
+
+    // Add three table data elements to the row
+    $tr.append($("<td></td>").text(userName));
+    $tr.append($("<td></td>").text(email));
+    $tr.append($("<td></td>").text(type));
+
+    // Add the new row to the specific table
+    $("#myTable").append($tr);
+}
+
+
 //function to display what information is currently in the name and email inputs
 function submitForm(){
     userName = document.getElementById("name").value;
