@@ -92,7 +92,49 @@
 
     </section>
 
-    <script src="calculator.js"></script>
+
+    <section class="pricing">
+
+        <h2>Minecraft OverWorld to NetherWorld Position Converter</h2>
+        <p>The following converter will give you the position you would create if you were to make a portal in the location you are currently in </br> Note: This will not give you the exact location but a general position. </br> Some factors in the game may change the location. Look at guides as to why your positions aren't currently matching up.</p>
+        <div class="intro">
+
+            <div class="sec-piece6">
+                <h3><br />Overworld Position<br /><br /></h3>
+                <p><b>Insert Position in Overworld</b><br /><br /></p>
+
+                <input type="text" id="OWX" class="display"> 
+                <input type="text" id="OWZ" class="display"> 
+                <input type="text" id="OWY" class="display"> 
+
+                <button onclick = "convertOWPositions()">
+                    <p>Convert</p>
+                </button>
+            </div>
+
+            <div class="sec-piece7">
+                <h3><br />Nether Position<br \><br \></h3>
+                <p><b>Insert Position in Netherworld</b><br /><br /></p>
+                
+                <input type="text" id="NWX" class="display"> 
+                <input type="text" id="NWZ" class="display"> 
+                <input type="text" id="NWY" class="display"> 
+
+                <button onclick = "convertNWPositions()">
+                    Convert
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class = sec-piece4>
+        <div id = "container">
+            <div id = "box"> </div>
+        </div>
+    </section>
+
+    <script src="projectInteraction.js"></script>
 </body>
 
 </html>
