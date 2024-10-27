@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(92, 206, 136);
 }
 
 .header {
@@ -17,32 +17,23 @@ body {
     flex-direction: column;
 }
 
-.blog {
-    background-color: rgb(154, 196, 233);
+.toolSection1 {
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
     flex-direction: column;
-
+    padding: 20px;
+    background-color: rgba(186, 186, 186, 0.882);
 }
 
-.testimonial {
+.toolSection2 {
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
     flex-direction: column;
-
-}
-
-.pricing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
-
+    padding: 20px;
 }
 
 .intro {
@@ -61,6 +52,7 @@ body {
     justify-content: center;
     align-self: center;
 }
+
 
 li {
     display: flex;
@@ -100,9 +92,9 @@ p {
 }
 
 button {
-    background-color: rgb(67, 133, 187);
-    color: white;
-    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(11, 14, 16);
     /* Remove border */
     outline: none;
     /* Remove outline */
@@ -115,6 +107,24 @@ button {
     padding: 20px 20px 20px 20px;
     margin: 10px;
     border-radius: 10px;
+}
+
+button.alternate {
+    background-color: rgb(92, 206, 136);
+    color: rgb(0, 0, 0);
+    /* Remove border */
+    outline: none;
+    /* Remove outline */
+    font-size: 20px;
+    height: 60px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    border-radius: 10px;
+
 }
 
 button:hover {
@@ -552,137 +562,53 @@ input {
 .testimPhoto {
     min-width: 50px;
     max-width: 100px;
-
 }
 
 /* General CSS attempt for formatting */
+
 .sec-piece {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self: top;
+    justify-content: top;
     flex-direction: column;
+    background-color:rgba(179, 102, 50, 0.887);
     margin: 10px;
-    border: 2px solid black;
-    width: 30%;
-    height: 300px;
+    padding: 30px;
+    min-width: 30%;
+    max-width: 40%;
+    height: auto;
 }
 
 .sec-piece2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.sec-piece3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    border: 2px solid black;
-    width: 30%;
-    height: 200px;
-}
-
-.sec-piece4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-    width: 30%;
-    height: 200px;
-}
-
-.sec-piece5 {
-    display: flex;
-    justify-content: left;
-    align-items: top;
-    flex-direction: column;
-    margin: 10px;
-    border: 2px solid black;
-    width: 30%;
-    height: 300px;
-}
-
-.sec-piece6 {
-    display: flex;
+    align-self: top;
     justify-content: top;
-    align-items: center;
     flex-direction: column;
-    background-color:rgba(196, 197, 198, 0.7);
+    background-color:rgba(162, 54, 45, 0.973);
     margin: 10px;
     padding: 30px;
     min-width: 30%;
     max-width: 40%;
-    height: 600px;
+    height: auto;
 }
 
-.sec-piece7 {
+.input-group {
     display: flex;
-    justify-content: top;
     align-items: center;
-    flex-direction: column;
-    background-color:rgba(67, 133, 187, 0.7);
-    margin: 10px;
-    padding: 30px;
-    min-width: 30%;
-    max-width: 40%;
-    height: 600px;
+    margin-bottom: 1em;
 }
 
-.sec-piece8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 90%;
-    margin: 10px;
+.input-group label {
+    margin-right: 0.5em;
+    font-weight: bold;
 }
 
-.sec-piece9 {
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-    min-width: 30%;
-    max-width: 70%;
-    border-bottom: 2px solid black;
+.input-group input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-
-.sec-piece10 {
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-    min-width: 30%;
-    max-width: 40%;
-
-}
-
-.sec-piece11 {
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 30px;
-}
-
-
-.sec-piececontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
+/* testing loading logo
 
 
 .limiting-spacer {

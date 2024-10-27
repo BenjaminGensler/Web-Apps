@@ -25,6 +25,7 @@ function clearDisplay() {
     displayEl.value = "";
     num1 = 0;
     num2 = 0;
+    action = "";
 }
 
 
@@ -44,7 +45,11 @@ function equalFunc() {
         numRes = num1 / num2;
     }
     displayEl.value = numRes.toString();
+    num1 = parseInt(displayEl.value);
+    num2 = 0;
+    action = "";
 }
+
 
 
 function convertOWPositions(){

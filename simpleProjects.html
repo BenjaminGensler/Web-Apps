@@ -16,19 +16,24 @@
 
 <body>
     <section>
-        <h2>Simple Projects</h2>
-        <p>Below are a few of the projects I have finished to show i'm well versed in the web development interactivite
-            space</p>
+        <section>
+            <h2>Online Tools</h2>
+        </section>
+
+        <section class = sec-piece4>
+            <div id = "container">
+                <div id = "box"> </div>
+            </div>
+        </section>
     </section>
 
 
-    <section class = "header">
+    <section class = "toolSection1">
         <h2>Calculator</h2>
-        <p>Below is a simple calculator I made using HTML, CSS, and JavaScript</p>
-
-        <input type="text" id="displayCalc" class="display" value=""> 
+       
+        <input type="text" id="displayCalc" class="calcBox" value=""> 
         <div class="intro">
-            <div class="sec-piece6">
+            <div>
                 <button onclick = "addToDisplay('7')">
                     <p>7</p>
                 </button>
@@ -38,12 +43,12 @@
                 <button onclick = "addToDisplay('1')">
                     <p>1</p>
                 </button>
-                <button onclick = "clearDisplay()">
+                <button class = "alternate" onclick = "clearDisplay()">
                     <p>Clear</p>
                 </button>
             </div>
 
-            <div class="sec-piece6">
+            <div>
                 <button onclick = "addToDisplay('8')">
                     <p>8</p>
                 </button>
@@ -58,7 +63,7 @@
                 </button>
             </div>
 
-            <div class="sec-piece6">
+            <div>
                 <button onclick = "addToDisplay('9')">
                     <p>9</p>
                 </button>
@@ -68,22 +73,22 @@
                 <button onclick = "addToDisplay('3')">
                     <p>3</p>
                 </button>
-                <button onclick = "equalFunc()">
+                <button class = "alternate" onclick = "equalFunc()">
                     <p>=</p>
                 </button>
             </div>
 
-            <div class="sec-piece7">
-                <button onclick = "actionButton('division')">
+            <div>
+                <button class = "alternate" onclick = "actionButton('division')">
                     <p>/</p>
                 </button>
-                <button onclick = "actionButton('multiplication')">
+                <button class = "alternate" onclick = "actionButton('multiplication')">
                     <p>*</p>
                 </button>
-                <button onclick = "actionButton('subtraction')">
+                <button class = "alternate" onclick = "actionButton('subtraction')">
                     <p>-</p>
                 </button>
-                <button onclick = "actionButton('addition')">
+                <button class = "alternate" onclick = "actionButton('addition')">
                     <p>+</p>
                 </button>
             </div>
@@ -93,44 +98,56 @@
     </section>
 
 
-    <section class="pricing">
+    <section class="toolSection2">
 
         <h2>Minecraft OverWorld to NetherWorld Position Converter</h2>
         <p>The following converter will give you the position you would create if you were to make a portal in the location you are currently in </br> Note: This will not give you the exact location but a general position. </br> Some factors in the game may change the location. Look at guides as to why your positions aren't currently matching up.</p>
         <div class="intro">
 
-            <div class="sec-piece6">
+            <div class="sec-piece">
                 <h3><br />Overworld Position<br /><br /></h3>
                 <p><b>Insert Position in Overworld</b><br /><br /></p>
 
-                <input type="text" id="OWX" class="display"> 
-                <input type="text" id="OWZ" class="display"> 
-                <input type="text" id="OWY" class="display"> 
+                <div class="input-group">
+                    <label for="OWX">X:</label>
+                    <input type="text" id="OWX" class="display">
+                </div>
+                <div class="input-group">
+                    <label for="OWZ">Z:</label>
+                    <input type="text" id="OWZ" class="display">
+                </div>
+                <div class="input-group">
+                    <label for="OWY">Y:</label>
+                    <input type="text" id="OWY" class="display">
+                </div>
 
-                <button onclick = "convertOWPositions()">
+                <button onclick="convertOWPositions()">
                     <p>Convert</p>
                 </button>
             </div>
 
-            <div class="sec-piece7">
-                <h3><br />Nether Position<br \><br \></h3>
+            <div class="sec-piece2">
+                <h3><br />Nether Position<br /><br /></h3>
                 <p><b>Insert Position in Netherworld</b><br /><br /></p>
                 
-                <input type="text" id="NWX" class="display"> 
-                <input type="text" id="NWZ" class="display"> 
-                <input type="text" id="NWY" class="display"> 
+                <div class="input-group">
+                    <label for="NWX">X:</label>
+                    <input type="text" id="NWX" class="display">
+                </div>
+                <div class="input-group">
+                    <label for="NWZ">Z:</label>
+                    <input type="text" id="NWZ" class="display">
+                </div>
+                <div class="input-group">
+                    <label for="NWY">Y:</label>
+                    <input type="text" id="NWY" class="display">
+                </div>
 
-                <button onclick = "convertNWPositions()">
+                <button onclick="convertNWPositions()">
                     Convert
                 </button>
 
             </div>
-        </div>
-    </section>
-
-    <section class = sec-piece4>
-        <div id = "container">
-            <div id = "box"> </div>
         </div>
     </section>
 
