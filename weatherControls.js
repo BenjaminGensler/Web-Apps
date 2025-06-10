@@ -12,7 +12,11 @@ async function getLocation(location){
     const data = await res.json();
     const result = data.results[0];
     // If no results found, return null
-    if (!result) return null;
+    if (!result) return {
+        name: "null",
+        lat: -1,
+        lon: -1
+    }
     // Return the first result with name, latitude, and longitude
     return {
         name: result.name || "",
@@ -28,7 +32,13 @@ async function getWeather(location){
     const data = await res.json();
     const current = data.current;
     // If no current weather data found, return null
-    if (!current) return null;
+    if (!current) return {
+        name: "null",
+        temperature: -1,
+        humidity: -1,
+        windSpeed: -1,
+        weatherCode: -1
+    }
     // Return the weather data
     return {
         name,
