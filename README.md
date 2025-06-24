@@ -1,4 +1,4 @@
-# Online-Tools
+# Web-Apps
 This repository contains a bunch of different web applications available for use by visitors. Below is a list of the provided web-apps that have been created. These will continue to be updated in the future. Please visit any that may interest you. 
 
 ## Web Apps
