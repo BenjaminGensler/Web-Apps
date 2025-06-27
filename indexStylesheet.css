@@ -1,0 +1,65 @@
+/* General CSS for index.html */
+.primaryBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(106, 214, 135);
+}
+
+.primaryBoxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    background-color: rgba(186, 186, 186, 0);
+}
+
+.secondaryBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(106, 214, 135);
+}
+
+.secondaryBoxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    background-color: rgba(186, 186, 186, 0);
+}
+
+.secondaryBoxContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mediaBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.mediaImage {
+    max-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
