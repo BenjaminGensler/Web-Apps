@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "content">
+            <header class="webAppsHeader">
+                <div class="headerContent">
+                    <h1 class="headerTitle">Web-Apps</h1>
+                    <nav class="headerNav">
+                        <ul class="navLinks">
+                            <li><a href="index.html#spotlight">Spotlight</a></li>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#underway">Underway</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="toolSection2">
+
+                <h2>Minecraft OverWorld to NetherWorld Position Converter</h2>
+                <p>The following converter will give you the position you would create if you were to make a portal in the location you are currently in </br> Note: This will not give you the exact location but a general position. </br> Some factors in the game may change the location. Look at guides as to why your positions aren't currently matching up.</p>
+                <div class="intro">
+
+                    <div class="sec-piece">
+                        <h3><br />Overworld Position<br /><br /></h3>
+                        <p><b>Insert Position in Overworld</b><br /><br /></p>
+
+                        <div class="input-group">
+                            <label for="OWX">X:</label>
+                            <input type="text" id="OWX" class="display">
+                        </div>
+                        <div class="input-group">
+                            <label for="OWZ">Z:</label>
+                            <input type="text" id="OWZ" class="display">
+                        </div>
+                        <div class="input-group">
+                            <label for="OWY">Y:</label>
+                            <input type="text" id="OWY" class="display">
+                        </div>
+
+                        <button onclick="convertOWPositions()">
+                            <p>Convert</p>
+                        </button>
+                    </div>
+
+                    <div class="sec-piece2">
+                        <h3><br />Nether Position<br /><br /></h3>
+                        <p><b>Insert Position in Netherworld</b><br /><br /></p>
+                        
+                        <div class="input-group">
+                            <label for="NWX">X:</label>
+                            <input type="text" id="NWX" class="display">
+                        </div>
+                        <div class="input-group">
+                            <label for="NWZ">Z:</label>
+                            <input type="text" id="NWZ" class="display">
+                        </div>
+                        <div class="input-group">
+                            <label for="NWY">Y:</label>
+                            <input type="text" id="NWY" class="display">
+                        </div>
+
+                        <button onclick="convertNWPositions()">
+                            Convert
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <section class = sec-piece4>
+                    <div id = "container">
+                        <div id = "box"> </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="footer">
+            <div class="footerContent">
+                <p>&copy; 2025 Benjamin Gensler. All rights reserved.</p>
+                <div class="socialLinks">
+                    <a href="https://github.com/BenjaminGensler" target="_blank">
+                        <img class="footerLink" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benjamin-gensler-6681b1251" target="_blank">
+                        <img class="footerLink" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
+                    </a>
+                    
+                    <a href="mailto:benjamingensler@outlook.com" class="footerLink">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="projectInteraction.js"></script>
+</body>
+
+</html>
