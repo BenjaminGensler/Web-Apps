@@ -46,10 +46,25 @@ const jumpList = {
   "/": "-..-.",
   "(": "-.--.",
   "= ": "-...-",
+  " ": "/", // Space is represented by a slash in Morse code
 };
 
 // This function converts a string of text into Morse code.
 function morseCodeConv() {
-    input = document.getElementById("morseCodeOutput").value;
-    document.getElementById("morseCodeText").value = input;
+    const input = document.getElementById("morseCodeText").value;
+    // array  to store Morse code conversion results
+    let morseCodeArray = [];
+
+    // for each character in input string (lowercase to match jumpList keys)
+    for (let char of input.toLowerCase()) {
+        if (jumpList[char]) {
+            // If the character exists in jumpList, add its Morse code to the array
+            morseCodeArray.push(jumpList[char]);
+        } else {
+            // In case of unknown characters such as emojis and such
+            morseCodeArray.push("?");
+        }
+    }
+
+    document.getElementById("morseCodeOutput").value = morseCodeArray.join(" ");
 }
