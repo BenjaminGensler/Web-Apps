@@ -12,6 +12,37 @@ body {
 .headerTitle, .mediaName, .mediaDesc {
     font-family: 'Outfit', sans-serif; /* Apply Outfit font to specific elements */
 }
+
+form {
+    display: flex;
+    flex-direction: row; /* Stack form elements vertically */
+    align-items: center; /* Center align items */
+}
+
+input {
+    font-family: 'Outfit', sans-serif; /* Apply Outfit font to input fields */
+    padding: 10px; /* Adds padding inside input fields */
+    border: 1px solid #5b3636; /* Light border for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+    width: 100%; /* Full width for input fields */
+    height: 60px; /* Set a consistent height for input fields */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.mediaBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 100px;
+    max-width: 250px;
+    background-color: rgba(219, 219, 219, 0.8);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -451,24 +482,6 @@ img.logo4 {
     min-width: 200px;
     margin: 20px;
 }
-
-
-/* header Template 5 */
-
-
-/* header Template 6 */
-input {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    width: 400px;
-    height: 20px;
-}
-
-
-
-/* ----------------------------------------------------------------------------------- */
-
 
 
 /* header Template 12 */

@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
 
-    </head>
-    <body>
-        <div class = "container">
-            <h1> weatherApp </h1>
-            <form class = "search-box" id="search-box">
-                <input type = "text" name = "location" placeholder = "Search..." id = "location-input">
-                <button type="submit" aria-label = "Search"> Search </button>
-            </form>
-            <div class = "grid">
-                <p class = "temperatureTxt"><span id = "temperature">0</span></p>
-                <p id = "weather-condition-name">Clear</p>
-            </div>
-            <ul class = "info">
-                <li><span id="humidity">0</span>%</li>
-                <li><span id="wind-speed">0</span>km/h</li>
-            </ul>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "content">
+            <header class="webAppsHeader">
+                <div class="headerContent">
+                    <h1 class="headerTitle">Web-Apps</h1>
+                    <nav class="headerNav">
+                        <ul class="navLinks">
+                            <li><a href="index.html#spotlight">Spotlight</a></li>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#underway">Underway</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="toolSection2">
+
+                <h1> weatherApp </h1>
+                <form class = "search-box" id="search-box">
+                    <input type = "text" name = "location" placeholder = "Search..." id = "location-input">
+                    <button type="submit" aria-label = "Search"> Search </button>
+                </form>
+                <div class = "mediaBox">
+                    <div class = "grid">
+                        <p class = "temperatureTxt"><span id = "temperature">0</span></p>
+                        <img id = "weather-condition-name" src="media/weatherCode/clear_sky.png"/>
+                    </div>
+                    <ul class = "info">
+                        <li>Humidity: <span id="humidity">0</span></li>
+                        <li>Wind speed:<span id="wind-speed">0</span></li>
+                    </ul>
+                </div>
+                
+            </section>
         </div>
-    </body>
+        <div class="footer">
+            <div class="footerContent">
+                <p>&copy; 2025 Benjamin Gensler. All rights reserved.</p>
+                <div class="socialLinks">
+                    <a href="https://github.com/BenjaminGensler" target="_blank">
+                        <img class="footerLink" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benjamin-gensler-6681b1251" target="_blank">
+                        <img class="footerLink" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
+                    </a>
+                    
+                    <a href="mailto:benjamingensler@outlook.com" class="footerLink">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="weatherControls.js"></script>
+</body>
+
 </html>
