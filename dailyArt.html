@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "content">
+            <header class="webAppsHeader">
+                <div class="headerContent">
+                    <h1 class="headerTitle">Web-Apps</h1>
+                    <nav class="headerNav">
+                        <ul class="navLinks">
+                            <li><a href="index.html#spotlight">Spotlight</a></li>
+                            <li><a href="index.html#gallery">Gallery</a></li>
+                            <li><a href="index.html#underway">Underway</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="toolSection2">
+
+                <h1> Daily Art </h1>
+                <p> Daily Art is a web application that allows users to view a new piece of art every day, along with its details and a link to the artist's page. The application fetches data from the Metropolitan Museum of Art API and displays it in a user-friendly format.</p>
+                <div class = "mediaBox">
+                    <section class="carousel">
+                        <button class="carousel-btn prev-btn">&lt;</button>
+                        <div class="carousel-images">
+                            <img src="" alt="Art 1">
+                            <img src="" alt="Art 2">
+                            <img src="" alt="Art 3">
+                        </div>
+                        <button class="carousel-btn next-btn">&gt;</button>
+                    </section>
+
+                    <h2 class = "artTitle"></h2>
+                    <h3 class = "artArtist"></h3>
+                    <p class = "artUrl"></p>
+                </div>
+                
+            </section>
+        </div>
+        <div class="footer">
+            <div class="footerContent">
+                <p>&copy; 2025 Benjamin Gensler. All rights reserved.</p>
+                <div class="socialLinks">
+                    <a href="https://github.com/BenjaminGensler" target="_blank">
+                        <img class="footerLink" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benjamin-gensler-6681b1251" target="_blank">
+                        <img class="footerLink" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
+                    </a>
+                    
+                    <a href="mailto:benjamingensler@outlook.com" class="footerLink">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="artAPIFetch.js"></script>
+</body>
+
+</html>
