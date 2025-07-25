@@ -40,7 +40,7 @@ input {
     max-width: 250px;
     background-color: rgba(219, 219, 219, 0.8);
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(47, 36, 36, 0.194);
 }
 
 .container {
@@ -795,7 +795,7 @@ img.logo4 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
     z-index: 10;
 }
