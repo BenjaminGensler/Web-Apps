@@ -46,6 +46,7 @@ input {
 .container {
     display: flex;
     flex-direction: column;
+    flex: 1;
     padding: 0px;
     margin: 0px;
 }
@@ -57,7 +58,7 @@ input {
     padding: 0px;
     margin: 0px;
     width: 100%;
-    min-height: 95vh;
+    /* min-height: 95vh; */
 }
 
 /* Header styling */
@@ -725,18 +726,18 @@ img.logo4 {
 
 
 .footer {
-    background-color: #333; 
-    color: #fff;
-    padding: 20px; 
-    margin: 0px;
-    text-align: center; 
+    display: flex;
+    justify-content: space-between; /* Position children at opposite ends */
+    align-items: center; /* Vertically center the children */
+    padding: 20px; /* Add space around the footer */
+    background-color: #f1f1f1; /* Optional: Add a background color */
 }
 
 .footerContent {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
-    max-width: 800px; 
+    width: 100%; 
     margin: 0 auto;
 }
 
