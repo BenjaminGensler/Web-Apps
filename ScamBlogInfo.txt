@@ -1,0 +1,63 @@
+Web Wise: Your Guide to Internet Threats & Safety
+The Safe Surfer: Staying Ahead of Online Scams
+-	Ways for users to stay informed of online scams
+o	Have knowledge of the common ones
+o	Be able to spot the red flags of scams
+o	Research the most recent scams that have been appearing
+-	Ways to protect yourself and those around you from these scams
+o	Create actually good passwords ( No information that is remotely related to you or has been posted ) 
+o	Avoid posting too much information about you on social media
+o	Set up two factor or multi factor authentication
+
+Private Security: Keeping Your private social media Secure
+While you may believe you have made your information safe on social media by making your accounts private one wrong move could completely throw all security you had away. 
+-	What to watch out for with your social media account
+o	Be careful of accepting friend requests from people you believe to be your friend (While they may seem to be your friend and their social media is full of these pictures these can all be copycat accounts)
+o	Did one of your friends accounts get hacked recently? If so then that picture of you sitting at your computer with a password visible in the background is our there on the internet. Make sure not to post anything too revealing of yourself such as any security questions you may have for other accounts such as my first pet, town I was born in, street I live on, etc.
+
+Catfish Friendship: Are these people really my friends or potential dangers
+Before accepting a friend request make sure to check the persons profile. Do they have any posts? If so when were all of these posts made? Did this friend of yours post their trip to Hawaii or the same day they posted their trip to Alaska, Yellowstone, and their anniversary in Europe? Do you already have this friend on social media?
+
+
+Malware Watch: Unmasking Digital Dangers
+This can be an article regarding just information of what dangers are out there.
+-	Dangers to look out for
+o	Viruses
+o	Scams
+o	Fake Websites (Scams pretty much)
+o	… other
+
+Scareware Stories: Real Threats & How to Avoid Them
+What is Scareware? Scareware is a type of malware of pop-up that takes over your computer screens and wont let you use your computer until you call the ‘Microsoft’ support number on the screen to remove the virus. While these may seem dangerous the reason they are called scareware is because they don’t actually infect your computer with a virus but rather try to scare you into downloading one or calling the support number to start to talk with you. From there they will try to get access to your computer themselves and then block you from using your own device. Do not call this number!
+-	How to avoid Scareware
+-	What to do if you clicked on Scareware
+What should you do if you downloaded a program or virus on your computer? (Provide a link of an article on what to do in case you did this question)
+
+Click Smart: Exposing Viruses and Online Traps
+Here we can take a look at various viruses and online traps and how you can avoid them yourself on the web. (Include various examples of viruses and traps and point out the red flags to avoid.
+
+Threat Radar: Spotting & Stopping Web Menaces
+
+
+Phish & Tell: How to Outsmart Cybercriminals
+
+
+Digital Defenders: Best Practices for a Safer Web
+
+
+Internet Immunity: Tools & Tips Against Malware
+
+
+Scam Scanner: Unveiling Internet Frauds
+
+
+Dangerous Downloads: What to Avoid Online
+
+
+Safe Bytes: Building Better Web Habits
+
+
+The Online Armor: Defending Your Digital Life
+
+
+Texting Scammers: Watching out for fake text alerts
