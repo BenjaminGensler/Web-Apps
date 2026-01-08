@@ -25,11 +25,77 @@ referenceColors.forEach(color => colorCounts[color.name] = 0);
 
 // some container elements
 const toolSection = document.querySelector('.toolSection1Text');
-const imageBox = toolSection.querySelector('.imageBox');
 
+const imageBox = document.querySelector('.imageBox');
+const dropArea = document.getElementById('dropArea');
+const fileInput = document.getElementById('fileInput');
 
-let c = document.createElement("canvas");
-let img1 = new Image();
+let img1 = null;
+
+// Handle drag events
+dropArea.addEventListener('click', () => fileInput.click());
+dropArea.addEventListener('dragover', e => {
+    e.preventDefault();
+    dropArea.classList.add('dragover');
+});
+dropArea.addEventListener('dragleave', e => {
+    e.preventDefault();
+    dropArea.classList.remove('dragover');
+});
+dropArea.addEventListener('drop', e => {
+    e.preventDefault();
+    dropArea.classList.remove('dragover');
+    handleFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => handleFiles(fileInput.files));
+
+function handleFiles(files) {
+    if (!files.length) return;
+    const file = files[0];
+    if (!file.type.startsWith('image/')) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        if (img1) img1.remove();
+        img1 = new Image();
+        img1.id = 'image1';
+        img1.src = e.target.result;
+        img1.style.maxWidth = '300px';
+        img1.style.display = 'block';
+        img1.onload = () => setupPixelation();
+        dropArea.innerHTML = '';
+        dropArea.appendChild(img1);
+    };
+    reader.readAsDataURL(file);
+}
+
+// Setup slider, pixelation, and color count (reuse previous logic)
+function setupPixelation() {
+    // Remove previous controls
+    imageBox.querySelectorAll('.pixel-output, .slider-div').forEach(e => e.remove());
+
+    // Slider
+    let sliderDiv = document.createElement('div');
+    sliderDiv.className = 'slider-div';
+    sliderDiv.style.margin = '20px 0';
+    sliderDiv.innerHTML = `
+        <label for="pixelSlider">Pixel Size: </label>
+        <input type="range" id="pixelSlider" min="2" max="30" value="20" step="1">
+        <span id="pixelValue">20</span>
+    `;
+    imageBox.appendChild(sliderDiv);
+
+    const pixelSlider = sliderDiv.querySelector('#pixelSlider');
+    const pixelValue = sliderDiv.querySelector('#pixelValue');
+
+    pixelSlider.oninput = function () {
+        pixelValue.textContent = this.value;
+        pixelateImage(parseInt(this.value, 10));
+    };
+
+    pixelateImage(parseInt(pixelSlider.value, 10));
+}
+
 
 // 1. Add slider to the page
 let sliderDiv = document.createElement('div');
@@ -49,14 +115,17 @@ const pixelValue = document.getElementById('pixelValue');
 function pixelateImage(sample_size) {
     // Remove previous outputs
     document.querySelectorAll('.pixel-output').forEach(e => e.remove());
+    const maxDim = 300;
+    let scale = Math.min(maxDim / img1.width, maxDim / img1.height, 1);
+    let w = Math.round(img1.width * scale);
+    let h = Math.round(img1.height * scale);
 
     let c = document.createElement("canvas");
-    let w = img1.width;
-    let h = img1.height;
+
     c.width = w;
     c.height = h;
     let ctx = c.getContext("2d");
-    ctx.drawImage(img1, 0, 0);
+    ctx.drawImage(img1, 0, 0, w, h);
 
     let pixelArr = ctx.getImageData(0, 0, w, h).data;
 
@@ -123,6 +192,8 @@ function pixelateImage(sample_size) {
     img2.className = 'pixel-output';
     img2.src = c.toDataURL("image/jpeg");
     img2.width = 600;
+    // Append canvas to DOM as needed
+    c.className = 'pixel-output';
     imageBox.appendChild(img2);
 }
 
