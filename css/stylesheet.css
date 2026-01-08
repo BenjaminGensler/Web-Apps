@@ -807,3 +807,17 @@ img.logo4 {
 .next-btn {
     right: 10px;
 }
+
+.drop-area {
+    border: 2px dashed #aaa;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+.drop-area.dragover {
+    background: #e0e0ff;
+    border-color: #333;
+}

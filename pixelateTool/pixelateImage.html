@@ -35,7 +35,13 @@
                     <h2>Pixelate Image Tool</h2>
                     <p>This tool allows you to pixelate an image by adjusting the pixel size using a slider. Upload your image, adjust the slider to change the pixelation level, and see the effect in real-time.</p>
                     <div class = "imageBox">
-                        <img id = "image1" src = "image1.png" />
+                        <div class="imageBox">
+                            <div id="dropArea" class="drop-area">
+                                <p>Drag & drop an image here, or click to select</p>
+                                <input type="file" id="fileInput" accept="image/*" style="display:none;">
+                            </div>
+                            <!-- Slider, pixelated image, and color count will be added here by JS -->
+                        </div>
                     </div>
                     
                 </div>
