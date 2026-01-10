@@ -97,20 +97,6 @@ function setupPixelation() {
 }
 
 
-// 1. Add slider to the page
-let sliderDiv = document.createElement('div');
-sliderDiv.style.margin = '20px 0';
-sliderDiv.innerHTML = `
-    <label for="pixelSlider">Pixel Size: </label>
-    <input type="range" id="pixelSlider" min="2" max="30" value="20" step="1">
-    <span id="pixelValue">20</span>
-`;
-
-imageBox.appendChild(sliderDiv);
-
-const pixelSlider = document.getElementById('pixelSlider');
-const pixelValue = document.getElementById('pixelValue');
-
 // 2. Move pixelation logic into a function
 function pixelateImage(sample_size) {
     // Remove previous outputs
