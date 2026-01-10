@@ -1,6 +1,12 @@
 /* Universal CSS elements */
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
 body {
+    height: 100%;
     margin: 0;
     padding: 0px;
     font-family: 'Outfit', sans-serif; /* Use a clean, modern font */
@@ -47,12 +53,14 @@ input {
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    min-height: 100vh;
+    /* flex: 1; */
     padding: 0px;
     margin: 0px;
 }
 .content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -736,11 +744,13 @@ img.logo4 {
 
 
 .footer {
-    display: flex;
-    justify-content: space-between; /* Position children at opposite ends */
-    align-items: center; /* Vertically center the children */
-    padding: 20px; /* Add space around the footer */
-    background-color: #f1f1f1; /* Optional: Add a background color */
+    width: 100vw;      /* 100% of viewport width */
+    background-color: #333; 
+    /* left: 0; */
+    color: #fff;
+    padding: 20px; 
+    margin: 0px;
+    text-align: center; 
 }
 
 .footerContent {
@@ -749,6 +759,8 @@ img.logo4 {
     justify-content: space-between;
     width: 100%; 
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .socialLinks {
