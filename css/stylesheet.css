@@ -1,8 +1,8 @@
 /* Universal CSS elements */
 html{
     height: 100%;
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
 body {
@@ -748,7 +748,7 @@ img.logo4 {
     background-color: #333; 
     /* left: 0; */
     color: #fff;
-    padding: 20px; 
+    /* padding: 20px;  */
     margin: 0px;
     text-align: center; 
 }
@@ -764,7 +764,7 @@ img.logo4 {
 }
 
 .socialLinks {
-    margin-top: 10px; /* Adds spacing above the social links */
+    margin: 30px; /* Adds spacing above the social links */
 }
 
 .footerLink {
@@ -781,7 +781,7 @@ img.logo4 {
 .footer img {
     width: 32px; 
     height: 32px; 
-    margin: 0 10px; 
+    /* margin: 0 10px;  */
     vertical-align: middle; 
     transition: transform 0.3s ease; 
 }

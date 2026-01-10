@@ -1,4 +1,8 @@
 /* General CSS for index.html */
+html{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0px;
@@ -141,7 +145,7 @@ body {
 
 
 .footer {
-    width: 100vw;      /* 100% of viewport width */
+    width: 100vw;
     background-color: #333; 
     /* left: 0; */
     color: #fff;
@@ -157,11 +161,10 @@ body {
     width: 100%; 
     margin: 0 auto;
     padding-left: 10px;
-    padding-right: 10px;
 }
 
 .socialLinks {
-    margin-top: 10px; /* Adds spacing above the social links */
+    margin-right: 30px; /* Adds spacing above the social links */
 }
 
 .footerLink {
@@ -178,7 +181,7 @@ body {
 .footer img {
     width: 32px; 
     height: 32px; 
-    margin: 0 10px; 
+    /* margin: 0 10px;  */
     vertical-align: middle; 
     transition: transform 0.3s ease; 
 }
