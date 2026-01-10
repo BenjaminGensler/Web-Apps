@@ -49,6 +49,15 @@ body {
     margin: 0; /* Removes default margin */
 }
 
+.headerTitle a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Makes links stand out */
+    padding: 10px 15px; /* Adds spacing inside links */
+    border-radius: 5px; /* Rounds the corners of links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
 .headerNav {
     margin-top: 20px; /* Adds spacing above the navigation */
 }
@@ -133,7 +142,9 @@ body {
 
 
 .footer {
+    width: 100vw;      /* 100% of viewport width */
     background-color: #333; 
+    /* left: 0; */
     color: #fff;
     padding: 20px; 
     margin: 0px;
@@ -144,8 +155,10 @@ body {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
-    max-width: 800px; 
+    width: 100%; 
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .socialLinks {

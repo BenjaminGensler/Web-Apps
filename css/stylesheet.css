@@ -37,6 +37,7 @@ input {
     flex-direction: column;
     margin: 10px;
     padding: 100px;
+    max-height: 300px;
     max-width: 250px;
     background-color: rgba(219, 219, 219, 0.8);
     border-radius: 10px;
@@ -80,6 +81,15 @@ input {
     font-size: 2.5rem; /* Large font size for the title */
     margin: 0; /* Removes default margin */
 }
+
+.headerTitle a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Makes links stand out */
+    padding: 10px 15px; /* Adds spacing inside links */
+    border-radius: 5px; /* Rounds the corners of links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
 
 .headerNav {
     margin-top: 20px; /* Adds spacing above the navigation */
