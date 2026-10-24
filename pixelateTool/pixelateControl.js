@@ -31,6 +31,7 @@ const dropArea = document.getElementById('dropArea');
 const fileInput = document.getElementById('fileInput');
 
 let img1 = null;
+let showOutlines = true;
 
 // Handle drag events
 dropArea.addEventListener('click', () => fileInput.click());
@@ -82,6 +83,7 @@ function setupPixelation() {
         <label for="pixelSlider">Pixel Size: </label>
         <input type="range" id="pixelSlider" min="2" max="30" value="20" step="1">
         <span id="pixelValue">20</span>
+        <label style="margin-left:16px;"><input type="checkbox" id="outlineToggle" ${showOutlines ? 'checked' : ''}> Show outlines</label>
     `;
     imageBox.appendChild(sliderDiv);
 
@@ -91,6 +93,11 @@ function setupPixelation() {
     pixelSlider.oninput = function () {
         pixelValue.textContent = this.value;
         pixelateImage(parseInt(this.value, 10));
+    };
+
+    sliderDiv.querySelector('#outlineToggle').onchange = function () {
+        showOutlines = this.checked;
+        pixelateImage(parseInt(pixelSlider.value, 10));
     };
 
     pixelateImage(parseInt(pixelSlider.value, 10));
@@ -144,9 +151,11 @@ function pixelateImage(sample_size) {
             ctx.fillStyle = `rgba(${r},${g},${b},${pixelArr[p+3]})`;
             ctx.fillRect(x, y, sample_size, sample_size);
 
-            ctx.strokeStyle = "black";
-            ctx.lineWidth = 1;
-            ctx.strokeRect(x, y, sample_size, sample_size);
+            if (showOutlines) {
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 1;
+                ctx.strokeRect(x, y, sample_size, sample_size);
+            }
         }
     }
 
